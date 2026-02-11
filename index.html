@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A New Horizon | Farewell</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Space for Particles -->
+    <div id="canvas-container">
+        <canvas id="starfield"></canvas>
+    </div>
+
+    <!-- Cinematic Intro -->
+    <div id="intro-overlay" class="overlay">
+        <div class="overlay-content">
+            <h1 class="fade-in-out">Mỗi chương đều có hồi kết.</h1>
+            <h1 class="fade-in-out delay-1">Mỗi kết thúc đều là một khởi đầu mới.</h1>
+            <button id="enter-btn" class="glass-btn">Bắt đầu lời chia tay</button>
+        </div>
+    </div>
+
+    <main id="story-main" class="hidden">
+        <!-- Scene 1: The Path -->
+        <section class="story-scene" data-scene="1">
+            <div class="content">
+                <p class="pre-title">KHỞI ĐẦU MỚI</p>
+                <h2 class="scene-title">Góc làm việc hôm nay bỗng trở nên trống vắng.</h2>
+                <div class="sculpture-container">
+                    <div class="light-pillar"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scene 2: The Echo -->
+        <section class="story-scene" data-scene="2">
+            <div class="content">
+                <h2 class="scene-title">Sự hiện diện của bạn đã để lại dấu ấn mà lời nói khó lòng diễn tả hết.</h2>
+                <p class="scene-desc">Vượt lên trên những công việc và thời hạn, đó là nguồn năng lượng bạn đã mang đến cho văn phòng này.</p>
+            </div>
+        </section>
+
+        <!-- Scene 3: The Horizon -->
+        <section class="story-scene" data-scene="3">
+            <div class="content">
+                <h2 class="scene-title">Những chân trời mới đang vẫy gọi.</h2>
+                <div class="horizon-line"></div>
+                <p class="scene-desc">Và dù chúng tôi ở lại, chúng tôi luôn dõi theo và ủng hộ từng bước chân bạn đi.</p>
+            </div>
+        </section>
+
+        <!-- Scene 4: The Final Word -->
+        <section class="story-scene finale" data-scene="4">
+            <div class="content">
+                <h2 class="scene-title">Chúc bạn mọi điều rực rỡ phía trước.</h2>
+                <button id="reveal-message" class="premium-btn">MỞ LÁ THƯ TẠM BIỆT</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- The Final Message Popup -->
+    <div id="farewell-modal" class="modal">
+        <div class="modal-wrapper">
+            <div class="modal-body">
+                <button class="close-btn">&times;</button>
+                <div class="modal-scroll-area">
+                    <h3 class="modal-header">Tạm biệt Vy</h3>
+                    <div class="farewell-content" id="user-content">
+                        <p class="intro-text">Đợt vừa rồi anh có coi bộ: <strong>Tiểu yêu quái núi Lãng Lãng</strong>. Kết phim có một câu rất hay mà anh nghĩ sẽ hợp với em lúc này:</p>
+                        
+                        <div class="movie-image-placeholder">
+                            <img src="22514256dME.jpg" alt="Tiểu yêu quái núi Lãng Lãng" id="movie-img">
+                            <div class="image-overlay-glow"></div>
+                        </div>
+                        
+                        <blockquote class="brave-soul-quote">
+                            "To Each Brave souls that dare to begin"
+                        </blockquote>
+
+                        <div class="personal-wishes">
+                            <p>Chúc Vy ăn Tết vui vẻ. Hát ngày càng hay, đừng có ngại nữa nghe.</p>
+                            <p>Chúc em luôn mạnh mẽ và thành công trên con đường mới nha!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p>Chúc bạn luôn rực sáng và thành công trên chặng đường mới.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
